@@ -11,6 +11,7 @@
 <body>
     <div class="header">
         <h1>ברוכים הבאים לאתר שאלות נפוצות מגשימים י"א</h1>
+        <button onclick="about()" class="back-button">אודות ויצירת קשר</button>
     </div>
     <div class="content-wrapper">
         <div class="content">
@@ -18,14 +19,20 @@
                 <a href="pages/tester.html">הודעות של הבודק</a>
             </div>
             <div class="week-link">
-                <a href="week2.html">שאלות שבוע 1</a>
+                <a href="pages/week2.html">שאלות שבוע 2</a>
             </div>
             <div class="week-link">
-                <a href="week3.html">שאלות שבוע 2</a>
+                <a href="/home.html">שאלות שבוע 3</a>
             </div>
             <!-- Add more week links as needed -->
         </div>
     </div>
-    <p id="copyright">האתר נבנה ומתוחזר על ידי אגוז &copy;</p>
+    <p id="copyright">האתר נבנה ומתוחזק על ידי אגוז &copy;</p>
+
+    <script>
+        function about() {
+            window.location.href = "./about.html";
+        }
+    </script>
 </body>
 </html>

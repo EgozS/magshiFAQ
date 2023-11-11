@@ -19,6 +19,8 @@ body {
     justify-content: center;
     min-height: calc(100vh - 80px);
     margin-top: -50px;
+    flex-direction: column;
+    padding: 60px;
 }
 
 .content {
@@ -85,6 +87,21 @@ body {
     margin-left: 10px;
 }
 
+.dropdown-trigger {
+    background-color: #4285f4; /* Set your desired background color */
+    color: #fff; /* Set your desired text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.dropdown-trigger:hover {
+    background-color: #2a4d8e; /* Adjusted hover background color */
+}
+
 
 .dropdown-card {
     position: relative;
@@ -112,4 +129,19 @@ body {
     padding: 12px;
     text-decoration: none;
     color: #333;
+}
+
+.back-button {
+    background-color: #135396;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #0d3e6e;
 }

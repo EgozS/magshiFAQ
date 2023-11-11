@@ -9,29 +9,36 @@
     <meta content="https://egozs.github.io/magshiFAQ/pages/tester.html" property="og:url" />
     <title>בודק</title>
 </head>
-<body>
+<body style="overflow: auto"> <!--todo: add back to home button-->
     <div class="header">
         <h1>שאלות נפוצות - בודק</h1>
+        <button onclick="goBack()" class="back-button">חזרה לדף הבית</button>
     </div>
     <div class="content-wrapper">
         <div class="dropdown-card" id="q1">
-            <div class="question">
-                <div class="question-text">
-                    <p>שאלה ראשונה</p>
+            <div class="question-wrapper">
+                <div class="question">
+                    <div class="question-text">
+                        <p>segmentation fault (core dumped)</p>
+                    </div>
+                    <div class="question-dropdown">
+                        <!-- Use the button to toggle the dropdown content -->
+                        <button class="dropdown-trigger">תשובה</button>
+                    </div>
                 </div>
-                <div class="question-dropdown">
-                    <!-- Use the button to toggle the dropdown content -->
-                    <button class="dropdown-trigger">תשובה</button>
+                <div class="dropdown-card-content">
+                    <!-- Add your card content here -->
+                    <img src="../imgs/tester/coreDumped.jpeg">
+                    <p>מדובר בשגיאה שעולה בבודק האוטומטי ולא בקובץ בודק, השגיאה בדרך כלל תעלה במצב של שגיאת זיכרון, קריאה או כתיבה למקום בזיכרון שלא קיים וכו'</p>
                 </div>
             </div>
-            <!-- The dropdown content associated with #q1-dropdown -->
-            <div class="dropdown-card-content">
-                <!-- Add your card content here -->
-                <p>תשובה לשאלה הראשונה</p>
-            </div>
-        </div>
-    </div>
+        </div>        
+    <p id="copyright">האתר נבנה ומתוחזק על ידי אגוז &copy;</p>
 
-    <p id="copyright">האתר נבנה ומתוחזר על ידי אגוז &copy;</p>
+    <script>
+        function goBack() {
+            window.location.href = "../home.html";
+        }
+    </script>
 </body>
 </html>
